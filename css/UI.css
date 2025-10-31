@@ -1,0 +1,155 @@
+body {
+  background: radial-gradient(circle at top, #0a0f1e, #000);
+  font-family: "Poppins", sans-serif;
+  color: #b9d2f3;
+  text-shadow: 0 0 10px #00c6ff, 0 0 25px #0072ff;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.container {
+  background: rgba(20, 25, 40, 0.9);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(48, 150, 223, 0.4);
+  width: 90%;
+  max-width: 550px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #5da2fc;
+  text-shadow: 0 0 10px #00c6ff, 0 0 25px #0072ff;
+  margin-bottom: 20px;
+}
+
+h6 {
+  text-align: center;
+  color: #5da2fc;
+  text-shadow: 0 0 10px #00c6ff, 0 0 25px #0072ff;
+  margin-top: 20px;
+}
+
+.form-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input, select, button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#InputKegiatan, #JadwalKegiatan {
+  flex: 1;
+  background: #1a1f33;
+  color: rgb(233, 0, 0);
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+
+#InputKegiatan-input:focus, #JadwalKegiatan:focus {
+  box-shadow: 0 0 10px #00c6ff;
+}
+
+#add-btn {
+  background: #00c6ff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#add-btn:hover {
+  background: #0072ff;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.delete-all {
+  background: #ff3c3c;
+  color: white;
+  transition: 0.3s;
+}
+
+.delete-all:hover {
+  background: #cc0000;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  color: #b9d2f3;
+  font-weight: 600;
+  border-bottom: 1px solid #0072ff;
+  padding: 8px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #222;
+}
+
+.empty {
+  color: #999;
+}
+
+.action-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  margin: 2px;
+  font-size: 0.9rem;
+}
+
+.complete-btn {
+  background: #00c6ff;
+  color: #fff;
+}
+
+.delete-btn {
+  background: #ff3c3c;
+  color: #fff;
+}
+
+.complete-btn:hover {
+  background: #0072ff;
+}
+
+.delete-btn:hover {
+  background: #cc0000;
+}
+
+/* Highlight salah input*/
+.invalid {
+  box-shadow: 0 0 10px red !important;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #5da2fc;
+  text-shadow: 0 0 10px #00c6ff, 0 0 25px #0072ff;
+  font-size: 0.9rem;
+  pointer-events: none; /* supaya tidak ganggu klik elemen lain */
+}
+
